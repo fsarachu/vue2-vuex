@@ -1,13 +1,15 @@
 <template>
-    <p>Counter is: {{ counter }}</p>
+    <p>{{ stringCounter }}</p>
 </template>
 
 <script>
+    import {mapGetters} from 'vuex';
+
     export default {
-        computed: {
-            counter() {
-                return this.$store.state.counter;
-            }
-        }
-    }
+        computed: mapGetters(
+            [
+                'stringCounter'
+            ]
+        )
+    };
 </script>
