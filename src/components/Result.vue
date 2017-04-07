@@ -6,10 +6,8 @@
     import {mapGetters} from 'vuex';
 
     export default {
-        computed: mapGetters(
-            [
-                'stringCounter'
-            ]
-        )
+        computed: {
+            ...mapGetters(['stringCounter'])
+        }
     };
 </script>
