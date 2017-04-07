@@ -6,7 +6,7 @@
     export default {
         computed: {
             counter() {
-                return 0;
+                return this.$store.state.counter;
             }
         }
     }

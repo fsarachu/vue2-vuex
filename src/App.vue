@@ -7,6 +7,7 @@
 </template>
 
 <script>
+    import store from './store/store';
     import AppCounter from './components/Counter.vue';
     import AppResult from './components/Result.vue';
 
@@ -14,7 +15,8 @@
         components: {
             AppCounter,
             AppResult
-        }
+        },
+        store
     }
 </script>
 
